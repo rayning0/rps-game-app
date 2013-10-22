@@ -7,7 +7,7 @@ class GameApp < Sinatra::Base
     
     # Your app code goes here
     @rps = RPSGame.new(params[:play].to_sym)
-    binding.pry
+    #binding.pry
     erb :rps_game
   end
 end
