@@ -1,1 +1,14 @@
-<h1>WELCOME TO ROCK PAPER SCISSORS</h1>
+<center><h1>WELCOME TO ROCK PAPER SCISSORS</h1>
+Player's move: <%= @rps.player %><br>
+Computer's move: <%= @rps.computer_play %><br><br>
+
+<h2>
+<% if @rps.won? %>
+  Player WON!
+<% elsif @rps.lost? %>
+  Player lost. Boo hoo.
+<% else %>
+  Player tied.
+<% end %>
+</h2>
+</center>
