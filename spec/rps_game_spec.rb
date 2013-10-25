@@ -106,6 +106,8 @@ describe RPSGame do
     end
   end
 
+  # game_result.values[:human_play] is same as 
+  # game_result.human_play!
   describe "#result" do
     it "should return an unsaved RPSGameResult model" do
       game = RPSGame.new(:rock)

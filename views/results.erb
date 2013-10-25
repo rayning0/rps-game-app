@@ -12,12 +12,13 @@
 
 <% @all.each do |g| %> 
 
+<!-- g.values[:human_play] is same as g.human_play! -->
 <tr>
-  <td><%= g.values[:human_play] %></td>
-  <td><%= g.values[:computer_play] %></td>
-  <td><%= g.values[:won] %></td>
-  <td><%= g.values[:tied] %></td>
-  <td><%= g.values[:created_at] %></td>
+  <td><%= g.human_play %></td>
+  <td><%= g.computer_play %></td>
+  <td><%= g.won %></td>
+  <td><%= g.tied %></td>
+  <td><%= g.created_at %></td>
 </tr>
 <% end %>
 
