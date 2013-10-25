@@ -116,10 +116,10 @@ describe RPSGame do
       game_result.class.should == RPSGameResult
       game_result.exists?.should == false
 
-      game_result.values[:human_play].should == "rock"
-      game_result.values[:computer_play].should == "paper"
-      game_result.values[:won].should == false
-      game_result.values[:created_at].class.should == Time
+      game_result.human_play.should == "rock"
+      game_result.computer_play.should == "paper"
+      game_result.won?.should == false
+      game_result.created_at.class.should == Time
     end
   end
 end
