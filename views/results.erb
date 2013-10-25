@@ -1,0 +1,27 @@
+<h1>Last 20 Game Results</h1>
+<table>
+<thead>
+<tr>
+  <th>Your Move</th>
+  <th>Computer Move</th>
+  <th>You Won?</th>
+  <th>You Tied?</th>
+  <th>Time</th>
+</tr>
+</thead>
+
+<% @all.each do |g| %> 
+
+<tr>
+  <td><%= g.values[:human_play] %></td>
+  <td><%= g.values[:computer_play] %></td>
+  <td><%= g.values[:won] %></td>
+  <td><%= g.values[:tied] %></td>
+  <td><%= g.values[:created_at] %></td>
+</tr>
+<% end %>
+
+<a href="/rps_game">Play Again!</a>
+</tbody>
+</table>
+

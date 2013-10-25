@@ -1,0 +1,26 @@
+   <h1>This Game's Results</h1>
+<table>
+<thead>
+<tr>
+  <th>Your Move</th>
+  <th>Computer Move</th>
+  <th>You Won?</th>
+  <th>You Tied?</th>
+  <th>Time</th>
+</tr>
+</thead>
+
+<tr>
+  <td><%= @gresult.values[:human_play] %></td>
+  <td><%= @gresult.values[:computer_play] %></td>
+  <td><%= @gresult.values[:won] %></td>
+  <td><%= @gresult.values[:tied] %></td>
+  <td><%= @gresult.values[:created_at] %></td>
+</tr>
+<tr>
+  <a href="/rps_game">Play Again!   </a>
+  <td><a href="/rps_game_results">   Show Latest 20 Results</a></td>
+</tr>
+
+</tbody>
+</table>
