@@ -117,14 +117,23 @@ a.button:active, input[type="submit"]:active {
 }
 
 label, input {
-  display: block;
+  display: inline-block;
+}
+
+label {
+  font-size: 2em;
   margin: 5px 0;
-  font-size: 1em;
 }
 
 input {
+  font-size: 1em;
   padding: 10px;
   border: 1px solid #ccc;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height:20px;
 }
 
 input[type="submit"] {
