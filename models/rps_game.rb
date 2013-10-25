@@ -36,6 +36,16 @@ class RPSGame
       tied: tied?,
       created_at: Time.now
     })
+
+=begin (another way)
+    RPSGameResult.new do |r|
+      r.human_play = self.player
+      r.computer_play = self.computer_play
+      r.won = won?
+      r.tied = tied?
+      r.created_at = Time.now
+    end
+=end
   end
 
   class PlayTypeError < Exception
